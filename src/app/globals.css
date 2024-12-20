@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 폰트 추가: 원스토어 모바일 고딕 */
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --background: #f3f4f6; /* 기본 배경색 */
     --foreground: #111827; /* 기본 전경색 */
@@ -9,4 +24,5 @@
 
 body {
     @apply bg-background text-foreground;
+    font-family: 'ONE-Mobile-Regular';
 }
